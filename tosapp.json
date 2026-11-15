@@ -1,0 +1,110 @@
+{
+  "app_id": "omnitoolsdocker",
+  "title": "Omni Tools",
+  "image": "iib0011/omni-tools:0.7.0",
+  "repo_name": "omnitools",
+  "mode": "wrapper",
+  "container_port": 8080,
+  "category": [
+    "Development_Tools"
+  ],
+  "volumes": [
+    {
+      "host": "/Volume1/DockerAppData/omnitoolsdocker/config",
+      "container": "/config"
+    }
+  ],
+  "env": {
+    "TZ": "Asia/Shanghai"
+  },
+  "auth": "iib0011",
+  "upstream_url": "https://github.com/iib0011/omni-tools",
+  "upstream_license": "MIT",
+  "descript": "Omni Tools is a collection of small web utilities that run entirely in your browser: converters, encoders and decoders, hash and UUID generators, text and number tools, image helpers and more. This package serves the static site from your NAS, so the tools work offline and no data leaves your network.",
+  "release_note": "1. First release: Omni Tools 0.7.0 from Docker Hub as a non-root container. A static collection of browser-based utilities served from the NAS.",
+  "important": "Requires DockerEngine (installed automatically if missing). Open the published port and pick a tool; everything runs client-side in the browser, so the container only serves static files and keeps no data. Plain HTTP; use a TLS reverse proxy before exposing it to the internet.",
+  "probe": {
+    "user_in_image": "(root)",
+    "entrypoint": [
+      "/docker-entrypoint.sh"
+    ],
+    "cmd": [
+      "nginx",
+      "-g",
+      "daemon off;"
+    ],
+    "exposed_ports": [
+      80
+    ],
+    "declared_volumes": [],
+    "image_healthcheck": [],
+    "digest": "iib0011/omni-tools@sha256:85f0e052a97326396c753e39de0ef74631c0783999ccca81ebc36262903ec9fa",
+    "architecture": "x86_64",
+    "platforms": [
+      "x86_64",
+      "aarch64"
+    ],
+    "http_client_in_image": "curl",
+    "trial_run": {
+      "ok": false,
+      "http_code": "",
+      "state": "exited",
+      "paths": [],
+      "host_port": 18000,
+      "log_tail": "/docker-entrypoint.sh: /docker-entrypoint.d/ is not empty, will attempt to perform configuration\n/docker-entrypoint.sh: Looking for shell scripts in /docker-entrypoint.d/\n/docker-entrypoint.sh: Launching /docker-entrypoint.d/10-listen-on-ipv6-by-default.sh\n10-listen-on-ipv6-by-default.sh: info: can not modify /etc/nginx/conf.d/default.conf (read-only file system?)\n/docker-entrypoint.sh: Sourcing /docker-entrypoint.d/15-local-resolvers.envsh\n/docker-entrypoint.sh: Launching /docker-entrypoint.d/20-envsubst-on-templates.sh\n/docker-entrypoint.sh: Launching /docker-entrypoint.d/30-tune-worker-processes.sh\n/docker-entrypoint.sh: Configuration complete; ready for start up\n2026/11/15 08:58:27 [warn] 1#1: the \"user\" directive makes sense only if the master process runs with super-user privileges, ignored in /etc/nginx/nginx.conf:2\nnginx: [warn] the \"user\" directive makes sense only if the master process runs with super-user privileges, ignored in /etc/nginx/nginx.conf:2\n2026/11/15 08:58:27 [emerg] 1#1: mkdir() \"/var/cache/nginx/client_temp\" failed (13: Permission denied)\nnginx: [emerg] mkdir() \"/var/cache/nginx/client_temp\" failed (13: Permission denied)",
+      "files_in_mounts": ""
+    },
+    "docker_hub": {},
+    "github": {
+      "owner": "iib0011",
+      "repo": "omni-tools",
+      "description": "Self-hosted collection of powerful web-based tools for everyday tasks. No ads, no tracking, just fast, accessible utilities right from your browser!",
+      "license": "MIT",
+      "homepage": "https://omnitools.app"
+    }
+  },
+  "healthcheck": [
+    "CMD-SHELL",
+    "curl -s -o /dev/null http://127.0.0.1:8080/ || exit 1"
+  ],
+  "entrypoint_file": "src/entrypoint.sh",
+  "platform": "x86_64",
+  "user": "1000:1000",
+  "publisher": "Moechz",
+  "compose_project": "omnitoolsdocker",
+  "github_repo": "omnitools",
+  "upstream_version": "0.7.0",
+  "release_tag_prefix": "v",
+  "version": "0.7.0-1",
+  "help": "https://github.com/Moechz/omnitools/issues",
+  "official": "https://github.com/iib0011/omni-tools",
+  "license": "MIT",
+  "docker_socket": false,
+  "group_add": [],
+  "host_port": 8164,
+  "healthcheck_start_period": "30s",
+  "wrapper_note": "the image serves its static site with nginx on port 80, which uid 1000 cannot\nbind. This wrapper writes a small nginx configuration on the mounted volume and\nserves the same files on port 8080.",
+  "wrapper_note_readme": "- **Entrypoint wrapper**: writes an nginx config on the volume that serves the bundled site on port 8080 (the image's own config binds 80, which a non-root container cannot use).",
+  "translations": {
+    "zh-cn": {
+      "descript": "Omni Tools 是一堆完全在浏览器里运行的小工具集合：转换、编解码、哈希与 UUID 生成、文本与数字处理、图片小工具等等。本包把静态站点托管在你的 NAS 上，离线也能用，数据不出内网。",
+      "important": "需要 DockerEngine（缺失时应用中心会自动安装）。打开已发布端口选工具即可；所有处理都在浏览器本地完成，容器只负责提供静态文件，不保存任何数据。界面为纯 HTTP，暴露到公网前请配置带 TLS 的反向代理。",
+      "release_note": "1. 首个版本：基于 Docker Hub 的 Omni Tools 0.7.0，以非 root 容器运行。托管在 NAS 上的浏览器小工具集合。"
+    },
+    "zh-hk": {
+      "descript": "Omni Tools 是一堆完全在瀏覽器裡執行的小工具集合：轉換、編解碼、雜湊與 UUID 產生、文字與數字處理、圖片小工具等等。本包把靜態站點託管在你的 NAS 上，離線也能用，資料不出內網。",
+      "important": "需要 DockerEngine（缺少時應用中心會自動安裝）。開啟已發佈端口選工具即可；所有處理都在瀏覽器本地完成，容器只負責提供靜態檔案，不保存任何資料。介面為純 HTTP，公開到互聯網前請配置帶 TLS 的反向代理。",
+      "release_note": "1. 首個版本：基於 Docker Hub 的 Omni Tools 0.7.0，以非 root 容器運行。託管在 NAS 上的瀏覽器小工具集合。"
+    }
+  },
+  "data_notes": "`/config` (mounted from `DockerAppData/omnitoolsdocker/config`) holds only the nginx config the wrapper writes; the site itself is read-only in the image.",
+  "design_notes": [
+    "**Custom nginx config.** The upstream image binds port 80 as root; the wrapper serves the same static files on 8080 with its own config from the volume.",
+    "**Stateless.** Nothing but the config file is written."
+  ],
+  "limitations": [
+    "- It is a static site: some tools that need server-side processing are not included.",
+    "- The UI is plain HTTP.",
+    "- Nothing is stored, so there is no history between sessions."
+  ]
+}

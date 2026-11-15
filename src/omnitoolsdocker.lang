@@ -1,0 +1,195 @@
+# ===========================================================================
+# Multilingual file for the TOS 7 Docker application "omnitoolsdocker".
+# File name MUST be: <appid>.lang.  23-language superset (14 required by TOS).
+# The App Center picks the text matching the user's device language;
+# untranslated nodes fall back to English, which the official guide allows.
+# Fields: name (app title), auth (upstream author), descript (up to 512
+# chars), release_note, important (up to 512 chars).
+# Translations come from tosapp.json "translations"; run
+#   tosdocker lang <app>          to re-render this file
+#   tosdocker translate <app>     to see what still needs translating
+# ===========================================================================
+[en-us]
+name         = "Omni Tools"
+auth         = "iib0011"
+version      = "@@VERSION@@"
+descript     = "Omni Tools is a collection of small web utilities that run entirely in your browser: converters, encoders and decoders, hash and UUID generators, text and number tools, image helpers and more. This package serves the static site from your NAS, so the tools work offline and no data leaves your network."
+release_note = "1. First release: Omni Tools 0.7.0 from Docker Hub as a non-root container. A static collection of browser-based utilities served from the NAS."
+important    = "Requires DockerEngine (installed automatically if missing). Open the published port and pick a tool; everything runs client-side in the browser, so the container only serves static files and keeps no data. Plain HTTP; use a TLS reverse proxy before exposing it to the internet."
+
+[zh-cn]
+name         = "Omni Tools"
+auth         = "iib0011"
+version      = "@@VERSION@@"
+descript     = "Omni Tools 是一堆完全在浏览器里运行的小工具集合：转换、编解码、哈希与 UUID 生成、文本与数字处理、图片小工具等等。本包把静态站点托管在你的 NAS 上，离线也能用，数据不出内网。"
+release_note = "1. 首个版本：基于 Docker Hub 的 Omni Tools 0.7.0，以非 root 容器运行。托管在 NAS 上的浏览器小工具集合。"
+important    = "需要 DockerEngine（缺失时应用中心会自动安装）。打开已发布端口选工具即可；所有处理都在浏览器本地完成，容器只负责提供静态文件，不保存任何数据。界面为纯 HTTP，暴露到公网前请配置带 TLS 的反向代理。"
+
+[zh-hk]
+name         = "Omni Tools"
+auth         = "iib0011"
+version      = "@@VERSION@@"
+descript     = "Omni Tools 是一堆完全在瀏覽器裡執行的小工具集合：轉換、編解碼、雜湊與 UUID 產生、文字與數字處理、圖片小工具等等。本包把靜態站點託管在你的 NAS 上，離線也能用，資料不出內網。"
+release_note = "1. 首個版本：基於 Docker Hub 的 Omni Tools 0.7.0，以非 root 容器運行。託管在 NAS 上的瀏覽器小工具集合。"
+important    = "需要 DockerEngine（缺少時應用中心會自動安裝）。開啟已發佈端口選工具即可；所有處理都在瀏覽器本地完成，容器只負責提供靜態檔案，不保存任何資料。介面為純 HTTP，公開到互聯網前請配置帶 TLS 的反向代理。"
+
+[fr-fr]
+name         = "Omni Tools"
+auth         = "iib0011"
+version      = "@@VERSION@@"
+descript     = "Omni Tools is a collection of small web utilities that run entirely in your browser: converters, encoders and decoders, hash and UUID generators, text and number tools, image helpers and more. This package serves the static site from your NAS, so the tools work offline and no data leaves your network."
+release_note = "1. First release: Omni Tools 0.7.0 from Docker Hub as a non-root container. A static collection of browser-based utilities served from the NAS."
+important    = "Requires DockerEngine (installed automatically if missing). Open the published port and pick a tool; everything runs client-side in the browser, so the container only serves static files and keeps no data. Plain HTTP; use a TLS reverse proxy before exposing it to the internet."
+
+[de-de]
+name         = "Omni Tools"
+auth         = "iib0011"
+version      = "@@VERSION@@"
+descript     = "Omni Tools is a collection of small web utilities that run entirely in your browser: converters, encoders and decoders, hash and UUID generators, text and number tools, image helpers and more. This package serves the static site from your NAS, so the tools work offline and no data leaves your network."
+release_note = "1. First release: Omni Tools 0.7.0 from Docker Hub as a non-root container. A static collection of browser-based utilities served from the NAS."
+important    = "Requires DockerEngine (installed automatically if missing). Open the published port and pick a tool; everything runs client-side in the browser, so the container only serves static files and keeps no data. Plain HTTP; use a TLS reverse proxy before exposing it to the internet."
+
+[it-it]
+name         = "Omni Tools"
+auth         = "iib0011"
+version      = "@@VERSION@@"
+descript     = "Omni Tools is a collection of small web utilities that run entirely in your browser: converters, encoders and decoders, hash and UUID generators, text and number tools, image helpers and more. This package serves the static site from your NAS, so the tools work offline and no data leaves your network."
+release_note = "1. First release: Omni Tools 0.7.0 from Docker Hub as a non-root container. A static collection of browser-based utilities served from the NAS."
+important    = "Requires DockerEngine (installed automatically if missing). Open the published port and pick a tool; everything runs client-side in the browser, so the container only serves static files and keeps no data. Plain HTTP; use a TLS reverse proxy before exposing it to the internet."
+
+[es-es]
+name         = "Omni Tools"
+auth         = "iib0011"
+version      = "@@VERSION@@"
+descript     = "Omni Tools is a collection of small web utilities that run entirely in your browser: converters, encoders and decoders, hash and UUID generators, text and number tools, image helpers and more. This package serves the static site from your NAS, so the tools work offline and no data leaves your network."
+release_note = "1. First release: Omni Tools 0.7.0 from Docker Hub as a non-root container. A static collection of browser-based utilities served from the NAS."
+important    = "Requires DockerEngine (installed automatically if missing). Open the published port and pick a tool; everything runs client-side in the browser, so the container only serves static files and keeps no data. Plain HTTP; use a TLS reverse proxy before exposing it to the internet."
+
+[hu-hu]
+name         = "Omni Tools"
+auth         = "iib0011"
+version      = "@@VERSION@@"
+descript     = "Omni Tools is a collection of small web utilities that run entirely in your browser: converters, encoders and decoders, hash and UUID generators, text and number tools, image helpers and more. This package serves the static site from your NAS, so the tools work offline and no data leaves your network."
+release_note = "1. First release: Omni Tools 0.7.0 from Docker Hub as a non-root container. A static collection of browser-based utilities served from the NAS."
+important    = "Requires DockerEngine (installed automatically if missing). Open the published port and pick a tool; everything runs client-side in the browser, so the container only serves static files and keeps no data. Plain HTTP; use a TLS reverse proxy before exposing it to the internet."
+
+[ja-jp]
+name         = "Omni Tools"
+auth         = "iib0011"
+version      = "@@VERSION@@"
+descript     = "Omni Tools is a collection of small web utilities that run entirely in your browser: converters, encoders and decoders, hash and UUID generators, text and number tools, image helpers and more. This package serves the static site from your NAS, so the tools work offline and no data leaves your network."
+release_note = "1. First release: Omni Tools 0.7.0 from Docker Hub as a non-root container. A static collection of browser-based utilities served from the NAS."
+important    = "Requires DockerEngine (installed automatically if missing). Open the published port and pick a tool; everything runs client-side in the browser, so the container only serves static files and keeps no data. Plain HTTP; use a TLS reverse proxy before exposing it to the internet."
+
+[ko-kr]
+name         = "Omni Tools"
+auth         = "iib0011"
+version      = "@@VERSION@@"
+descript     = "Omni Tools is a collection of small web utilities that run entirely in your browser: converters, encoders and decoders, hash and UUID generators, text and number tools, image helpers and more. This package serves the static site from your NAS, so the tools work offline and no data leaves your network."
+release_note = "1. First release: Omni Tools 0.7.0 from Docker Hub as a non-root container. A static collection of browser-based utilities served from the NAS."
+important    = "Requires DockerEngine (installed automatically if missing). Open the published port and pick a tool; everything runs client-side in the browser, so the container only serves static files and keeps no data. Plain HTTP; use a TLS reverse proxy before exposing it to the internet."
+
+[pl-pl]
+name         = "Omni Tools"
+auth         = "iib0011"
+version      = "@@VERSION@@"
+descript     = "Omni Tools is a collection of small web utilities that run entirely in your browser: converters, encoders and decoders, hash and UUID generators, text and number tools, image helpers and more. This package serves the static site from your NAS, so the tools work offline and no data leaves your network."
+release_note = "1. First release: Omni Tools 0.7.0 from Docker Hub as a non-root container. A static collection of browser-based utilities served from the NAS."
+important    = "Requires DockerEngine (installed automatically if missing). Open the published port and pick a tool; everything runs client-side in the browser, so the container only serves static files and keeps no data. Plain HTTP; use a TLS reverse proxy before exposing it to the internet."
+
+[ru-ru]
+name         = "Omni Tools"
+auth         = "iib0011"
+version      = "@@VERSION@@"
+descript     = "Omni Tools is a collection of small web utilities that run entirely in your browser: converters, encoders and decoders, hash and UUID generators, text and number tools, image helpers and more. This package serves the static site from your NAS, so the tools work offline and no data leaves your network."
+release_note = "1. First release: Omni Tools 0.7.0 from Docker Hub as a non-root container. A static collection of browser-based utilities served from the NAS."
+important    = "Requires DockerEngine (installed automatically if missing). Open the published port and pick a tool; everything runs client-side in the browser, so the container only serves static files and keeps no data. Plain HTTP; use a TLS reverse proxy before exposing it to the internet."
+
+[tr-tr]
+name         = "Omni Tools"
+auth         = "iib0011"
+version      = "@@VERSION@@"
+descript     = "Omni Tools is a collection of small web utilities that run entirely in your browser: converters, encoders and decoders, hash and UUID generators, text and number tools, image helpers and more. This package serves the static site from your NAS, so the tools work offline and no data leaves your network."
+release_note = "1. First release: Omni Tools 0.7.0 from Docker Hub as a non-root container. A static collection of browser-based utilities served from the NAS."
+important    = "Requires DockerEngine (installed automatically if missing). Open the published port and pick a tool; everything runs client-side in the browser, so the container only serves static files and keeps no data. Plain HTTP; use a TLS reverse proxy before exposing it to the internet."
+
+[pt-pt]
+name         = "Omni Tools"
+auth         = "iib0011"
+version      = "@@VERSION@@"
+descript     = "Omni Tools is a collection of small web utilities that run entirely in your browser: converters, encoders and decoders, hash and UUID generators, text and number tools, image helpers and more. This package serves the static site from your NAS, so the tools work offline and no data leaves your network."
+release_note = "1. First release: Omni Tools 0.7.0 from Docker Hub as a non-root container. A static collection of browser-based utilities served from the NAS."
+important    = "Requires DockerEngine (installed automatically if missing). Open the published port and pick a tool; everything runs client-side in the browser, so the container only serves static files and keeps no data. Plain HTTP; use a TLS reverse proxy before exposing it to the internet."
+
+[ar-sa]
+name         = "Omni Tools"
+auth         = "iib0011"
+version      = "@@VERSION@@"
+descript     = "Omni Tools is a collection of small web utilities that run entirely in your browser: converters, encoders and decoders, hash and UUID generators, text and number tools, image helpers and more. This package serves the static site from your NAS, so the tools work offline and no data leaves your network."
+release_note = "1. First release: Omni Tools 0.7.0 from Docker Hub as a non-root container. A static collection of browser-based utilities served from the NAS."
+important    = "Requires DockerEngine (installed automatically if missing). Open the published port and pick a tool; everything runs client-side in the browser, so the container only serves static files and keeps no data. Plain HTTP; use a TLS reverse proxy before exposing it to the internet."
+
+[cs-cz]
+name         = "Omni Tools"
+auth         = "iib0011"
+version      = "@@VERSION@@"
+descript     = "Omni Tools is a collection of small web utilities that run entirely in your browser: converters, encoders and decoders, hash and UUID generators, text and number tools, image helpers and more. This package serves the static site from your NAS, so the tools work offline and no data leaves your network."
+release_note = "1. First release: Omni Tools 0.7.0 from Docker Hub as a non-root container. A static collection of browser-based utilities served from the NAS."
+important    = "Requires DockerEngine (installed automatically if missing). Open the published port and pick a tool; everything runs client-side in the browser, so the container only serves static files and keeps no data. Plain HTTP; use a TLS reverse proxy before exposing it to the internet."
+
+[he-il]
+name         = "Omni Tools"
+auth         = "iib0011"
+version      = "@@VERSION@@"
+descript     = "Omni Tools is a collection of small web utilities that run entirely in your browser: converters, encoders and decoders, hash and UUID generators, text and number tools, image helpers and more. This package serves the static site from your NAS, so the tools work offline and no data leaves your network."
+release_note = "1. First release: Omni Tools 0.7.0 from Docker Hub as a non-root container. A static collection of browser-based utilities served from the NAS."
+important    = "Requires DockerEngine (installed automatically if missing). Open the published port and pick a tool; everything runs client-side in the browser, so the container only serves static files and keeps no data. Plain HTTP; use a TLS reverse proxy before exposing it to the internet."
+
+[id-id]
+name         = "Omni Tools"
+auth         = "iib0011"
+version      = "@@VERSION@@"
+descript     = "Omni Tools is a collection of small web utilities that run entirely in your browser: converters, encoders and decoders, hash and UUID generators, text and number tools, image helpers and more. This package serves the static site from your NAS, so the tools work offline and no data leaves your network."
+release_note = "1. First release: Omni Tools 0.7.0 from Docker Hub as a non-root container. A static collection of browser-based utilities served from the NAS."
+important    = "Requires DockerEngine (installed automatically if missing). Open the published port and pick a tool; everything runs client-side in the browser, so the container only serves static files and keeps no data. Plain HTTP; use a TLS reverse proxy before exposing it to the internet."
+
+[nb-no]
+name         = "Omni Tools"
+auth         = "iib0011"
+version      = "@@VERSION@@"
+descript     = "Omni Tools is a collection of small web utilities that run entirely in your browser: converters, encoders and decoders, hash and UUID generators, text and number tools, image helpers and more. This package serves the static site from your NAS, so the tools work offline and no data leaves your network."
+release_note = "1. First release: Omni Tools 0.7.0 from Docker Hub as a non-root container. A static collection of browser-based utilities served from the NAS."
+important    = "Requires DockerEngine (installed automatically if missing). Open the published port and pick a tool; everything runs client-side in the browser, so the container only serves static files and keeps no data. Plain HTTP; use a TLS reverse proxy before exposing it to the internet."
+
+[nl-nl]
+name         = "Omni Tools"
+auth         = "iib0011"
+version      = "@@VERSION@@"
+descript     = "Omni Tools is a collection of small web utilities that run entirely in your browser: converters, encoders and decoders, hash and UUID generators, text and number tools, image helpers and more. This package serves the static site from your NAS, so the tools work offline and no data leaves your network."
+release_note = "1. First release: Omni Tools 0.7.0 from Docker Hub as a non-root container. A static collection of browser-based utilities served from the NAS."
+important    = "Requires DockerEngine (installed automatically if missing). Open the published port and pick a tool; everything runs client-side in the browser, so the container only serves static files and keeps no data. Plain HTTP; use a TLS reverse proxy before exposing it to the internet."
+
+[sv-se]
+name         = "Omni Tools"
+auth         = "iib0011"
+version      = "@@VERSION@@"
+descript     = "Omni Tools is a collection of small web utilities that run entirely in your browser: converters, encoders and decoders, hash and UUID generators, text and number tools, image helpers and more. This package serves the static site from your NAS, so the tools work offline and no data leaves your network."
+release_note = "1. First release: Omni Tools 0.7.0 from Docker Hub as a non-root container. A static collection of browser-based utilities served from the NAS."
+important    = "Requires DockerEngine (installed automatically if missing). Open the published port and pick a tool; everything runs client-side in the browser, so the container only serves static files and keeps no data. Plain HTTP; use a TLS reverse proxy before exposing it to the internet."
+
+[th-th]
+name         = "Omni Tools"
+auth         = "iib0011"
+version      = "@@VERSION@@"
+descript     = "Omni Tools is a collection of small web utilities that run entirely in your browser: converters, encoders and decoders, hash and UUID generators, text and number tools, image helpers and more. This package serves the static site from your NAS, so the tools work offline and no data leaves your network."
+release_note = "1. First release: Omni Tools 0.7.0 from Docker Hub as a non-root container. A static collection of browser-based utilities served from the NAS."
+important    = "Requires DockerEngine (installed automatically if missing). Open the published port and pick a tool; everything runs client-side in the browser, so the container only serves static files and keeps no data. Plain HTTP; use a TLS reverse proxy before exposing it to the internet."
+
+[vi-vn]
+name         = "Omni Tools"
+auth         = "iib0011"
+version      = "@@VERSION@@"
+descript     = "Omni Tools is a collection of small web utilities that run entirely in your browser: converters, encoders and decoders, hash and UUID generators, text and number tools, image helpers and more. This package serves the static site from your NAS, so the tools work offline and no data leaves your network."
+release_note = "1. First release: Omni Tools 0.7.0 from Docker Hub as a non-root container. A static collection of browser-based utilities served from the NAS."
+important    = "Requires DockerEngine (installed automatically if missing). Open the published port and pick a tool; everything runs client-side in the browser, so the container only serves static files and keeps no data. Plain HTTP; use a TLS reverse proxy before exposing it to the internet."
+
